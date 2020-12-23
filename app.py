@@ -1,4 +1,6 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template
+
+app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def home():
@@ -25,3 +27,11 @@ MiBhc3BlY3RzIG9mIHRoaXMgY291cnNlIHRoYXQgSSBiZWxpZXZlIEkgd2lsbCBmaW5kIHRoZSBtb3N0
 
 '''
       return word
+
+@app.route('/documentation', methods=['GET'])
+def docs():
+      return render_template("documentationWarwick.html")
+
+
+if __name__ == '__main__':
+    app.run()
