@@ -28,9 +28,7 @@ MiBhc3BlY3RzIG9mIHRoaXMgY291cnNlIHRoYXQgSSBiZWxpZXZlIEkgd2lsbCBmaW5kIHRoZSBtb3N0
 '''
       return word
 
-@app.route('/documentation', methods=['GET'])
-def docs():
-      return render_template("documentationWarwick.html")
+
 
 
 if __name__ == '__main__':
