@@ -1,13 +1,3 @@
-import flask
-from flask import request
-import pandas as pd
-from datetime import datetime as dt
-
-app = flask.Flask(__name__)
-
-
-@app.route('/', methods=['GET'])
-import os
 from flask import Flask, render_template, request, redirect, url_for
 
 @app.route('/', methods=['GET'])
